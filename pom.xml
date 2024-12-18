@@ -13,6 +13,7 @@
     <properties>
         <java.version>23</java.version>
         <vaadin.version>24.5.8</vaadin.version>
+        <maven.compiler.proc>full</maven.compiler.proc>
     </properties>
 
     <parent>

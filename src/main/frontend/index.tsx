@@ -24,9 +24,11 @@ const Context = createContext(null);
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#ad302f',
+            main: '#000',
         },
-        secondary: pink,
+        secondary: {
+            main: '#e9dcdc'
+        }
     },
 });
 

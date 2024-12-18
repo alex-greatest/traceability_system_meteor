@@ -34,19 +34,19 @@
  ******************************************************************************/
 import { RouterConfigurationBuilder } from '@vaadin/hilla-file-router/runtime.js';
 import Flow from 'Frontend/generated/flow/Flow';
-import fileRoutes from 'Frontend/generated/file-routes';
 import LoginView from 'Frontend/components/login/LoginView';
+import fileRoutes from 'Frontend/generated/file-routes';
 
 export const { router, routes } = new RouterConfigurationBuilder()
-    .withFileRoutes(fileRoutes) // (1)
-    .withReactRoutes(
-        [
-            { path: '/login', element: <LoginView />, handle: { title: 'Login' } }
-        ]
-    )
-    .withFallback(Flow)
-    // Optional method that adds an authentication for routes.
-    // Can take an optional path to redirect to, if not authenticated:
-    // .protect('/login');
-    .protect()
-    .build();
+  .withFileRoutes(fileRoutes) // (1)
+  .withReactRoutes(
+    [
+      { path: '/login', element: <LoginView />, handle: { title: 'Login' } }
+    ]
+  )
+  .withFallback(Flow)
+  // Optional method that adds an authentication for routes.
+  // Can take an optional path to redirect to, if not authenticated:
+  // .protect('/login');
+  .protect()
+  .build();

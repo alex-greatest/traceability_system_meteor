@@ -1,5 +1,5 @@
 import { configureAuth } from '@vaadin/hilla-react-auth';
-import { UserInfoService } from '../../../../../../../generation-cp/src/main/frontend/generated/endpoints';
+import { UserInfoService, UserService } from '../../../../../frontend/generated/endpoints';
 
 // Configure auth to use `UserInfoService.getUserInfo`
 const auth = configureAuth(UserInfoService.getUserInfo, {

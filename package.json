@@ -74,6 +74,9 @@
     "@fontsource/roboto": "$@fontsource/roboto",
     "material-react-table": "$material-react-table",
     "@tanstack/react-query": "$@tanstack/react-query",
+    "@mui/icons-material": "$@mui/icons-material",
+    "@mui/material": "$@mui/material",
+    "@mui/x-date-pickers": "$@mui/x-date-pickers",
     "@toolpad/core": "$@toolpad/core",
     "@vaadin/bundles": "$@vaadin/bundles",
     "@vaadin/polymer-legacy-adapter": "$@vaadin/polymer-legacy-adapter",
@@ -102,9 +105,6 @@
     "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
     "@emotion/react": "$@emotion/react",
     "@emotion/styled": "$@emotion/styled",
-    "@mui/icons-material": "$@mui/icons-material",
-    "@mui/material": "$@mui/material",
-    "@mui/x-date-pickers": "$@mui/x-date-pickers",
     "react-dom": "$react-dom"
   },
   "vaadin": {

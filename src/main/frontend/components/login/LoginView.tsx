@@ -1,6 +1,23 @@
-import {LoginOverlay} from "@vaadin/react-components";
+import { LoginI18n, LoginOverlay } from '@vaadin/react-components';
 import {useSignal} from "@vaadin/hilla-react-signals";
 import {useAuth} from "Frontend/components/auth/auth";
+
+const loginI18nDefault: LoginI18n = {
+  form: {
+    title: '',
+    username: 'Имя пользователя',
+    password: 'Пароль',
+    submit: 'Войти',
+    forgotPassword: 'Forgot password',
+  },
+  header: { title: 'Вход', description: '' },
+  errorMessage: {
+    title: 'Неккоректное имя или пароль',
+    message: 'Проверьте логин или пароль и повторите ввод.',
+    username: 'Имя пользователя обязательно для заполнения',
+    password: 'Пароль обязателен для заполнения',
+  },
+};
 
 export default function LoginView() {
     const { login } = useAuth();
@@ -23,6 +40,7 @@ export default function LoginView() {
             }}
             onErrorChanged={() => hasDisable.value = true}
             disabled={hasDisable.value}
+            i18n={loginI18nDefault}
         />
     );
 }
